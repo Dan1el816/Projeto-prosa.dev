@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <%- include("partials/head.ejs") %>
+  <body class="compose-layout">
+    <%- include("partials/header.ejs") %>
+
+    <main class="compose-page">
+      <form action="/enviar" method="POST" class="compose-form">
+        <button type="button" class="add-media" aria-label="Adicionar mídia">+</button>
+
+        <div class="compose-fields">
+          <label class="visually-hidden" for="titulo">Título</label>
+          <input
+            class="compose-title"
+            type="text"
+            id="titulo"
+            name="titulo"
+            placeholder="Título"
+            autocomplete="off"
+            required
+          />
+
+          <label class="visually-hidden" for="corpotexto">Conteúdo</label>
+          <textarea
+            class="compose-body"
+            id="corpotexto"
+            name="conteudo"
+            placeholder="Conte sua história..."
+            rows="8"
+            required
+          ></textarea>
+          <button type="submit" class="submit-post">Publicar</button>
+        </div>
+      </form>
+    </main>
+
+
+    <%- include("partials/footer.ejs") %>
+  </body>
+</html>

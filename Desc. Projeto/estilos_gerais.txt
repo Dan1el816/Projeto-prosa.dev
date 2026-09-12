@@ -1,0 +1,29 @@
+Fontes (Font Family)
+
+Corpo do texto / artigos: Source Serif Pro (ou a versão mais nova Source Serif 4) — uma serifada da Adobe, ótima para leitura longa é um typeface serifado projetado por Paul D. Hunt, com letras elegantes e serifas sutis que trazem um ar de refinamento 
+Word SCR
+Interface / UI (menus, botões, metadados): Sohne (fonte proprietária do Medium) — como não é de uso livre, um bom substituto de código aberto é Inter ou Helvetica Neue / Arial como fallback
+
+
+css
+/* Títulos e corpo do post */
+font-family: 'Source Serif 4', Georgia, serif;
+
+/* UI, navegação, botões, datas */
+font-family: 'Inter', -apple-system, 'Segoe UI', sans-serif;
+
+Paleta de cores
+
+Uso	Cor	Hex
+Fundo	Branco	
+#FFFFFF
+Texto principal	Preto/quase-preto	
+#242424
+Texto secundário (datas, autor)	Cinza	
+#6B6B6B
+Bordas / divisores	Cinza claro	
+#E6E6E6
+Destaque / links / botão principal	Verde Medium	
+#1A8917
+Hover do verde	Verde escuro	
+#0F730C

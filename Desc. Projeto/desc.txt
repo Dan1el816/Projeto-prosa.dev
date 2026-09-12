@@ -1,0 +1,104 @@
+#### Descrição do Projeto
+
+O objetivo deste projeto é criar uma aplicação web de **Blog** utilizando **Node.js, Express.js e EJS**. A aplicação permitirá que os usuários criem e visualizem publicações (posts) de blog.
+
+As publicações **não serão persistentes entre as sessões**, pois nenhuma base de dados será utilizada nesta versão da aplicação.
+
+A estilização será um aspecto importante deste projeto para garantir uma boa experiência para o usuário.
+
+#### Exemplo
+
+http://www.paulgraham.com/articles.html
+
+#### Entregáveis
+
+* Um projeto Node para o funcionamento do site.
+* Incluir pelo menos um arquivo **EJS** para a estrutura do site.
+* Incluir pelo menos um arquivo **CSS** para a estilização do site.
+
+#### Funcionalidades
+
+1. **Criação de Posts:** Os usuários devem poder criar novas publicações.
+
+2. **Visualização de Posts:** A página inicial deve permitir que o usuário visualize todas as suas publicações.
+
+3. **Atualização/Exclusão de Posts:** Os usuários devem poder editar e excluir publicações conforme necessário.
+
+4. **Estilização:** A aplicação deve ser bem estilizada e responsiva, garantindo uma boa experiência de usuário tanto em computadores quanto em dispositivos móveis.
+
+#### Requisitos Técnicos
+
+1. **Node.js e Express.js:** A aplicação será um servidor web construído utilizando Node.js e Express.js. O Express.js será responsável pelo gerenciamento das rotas e dos middlewares.
+
+2. **EJS:** O EJS será utilizado como mecanismo de templates para gerar HTML dinâmico com base no estado atual da aplicação.
+
+#### Cronograma
+
+**Hora 0: Planejamento**
+
+* Reunir ideias de conteúdo e design, criar wireframes e mockups.
+* Planejar como a aplicação funcionará, quais rotas poderão ser necessárias e quais páginas precisarão ser criadas.
+
+**Hora 1: Configuração**
+
+* Configurar o repositório do projeto, inicializar a aplicação Node.js e instalar as dependências necessárias (Express.js e EJS).
+* Criar a estrutura da aplicação, incluindo rotas, views e arquivos estáticos.
+* Configurar o servidor Express.js e definir as rotas necessárias.
+
+**Horas 2–3: Implementação das Funcionalidades**
+
+* Implementar a funcionalidade de criação de posts. Isso inclui criar o formulário e lidar com o envio do formulário no servidor.
+* Implementar a funcionalidade de visualização dos posts. Isso inclui exibir todas as publicações na página inicial.
+* Implementar a funcionalidade de edição dos posts. Isso inclui utilizar um formulário para carregar a publicação existente e permitir que o usuário a edite e salve.
+* Implementar a funcionalidade de exclusão. Isso permitirá que o usuário clique em um botão e remova a publicação da página inicial.
+* Testar a aplicação para garantir que a criação e a visualização dos posts estejam funcionando corretamente.
+
+**Horas 4–5: Estilização e Aperfeiçoamento**
+
+* Estilizar a aplicação. Isso inclui criar um arquivo CSS, vinculá-lo aos seus templates EJS e escrever CSS ou utilizar Bootstrap/Flexbox/Grid para estilizar a aplicação.
+* Testar a aplicação em diferentes dispositivos e navegadores para garantir que a estilização funcione corretamente.
+* Corrigir quaisquer bugs ou problemas encontrados durante os testes.
+
+#### Perguntas Frequentes (FAQ)
+
+**1. Onde estão os arquivos iniciais, arquivos de estilização ou código da solução?**
+
+O objetivo dos projetos **Capstone** é fazer com que você desenvolva as habilidades de independência necessárias para atuar como um desenvolvedor profissional.
+
+Diferentemente dos projetos dos tutoriais no final dos módulos, os projetos Capstone dão a você muito mais liberdade, mas também oferecem menos ajuda.
+
+Não existem arquivos iniciais, arquivos de estilização, passo a passo, orientações detalhadas ou código da solução.
+
+O objetivo é que você construa um projeto real por conta própria, utilizando as habilidades que adquiriu até este ponto do curso. Estamos assumindo que você não pulou nenhum módulo do curso.
+
+Para mais informações sobre os projetos Capstone, consulte este vídeo:
+
+https://www.udemy.com/course/the-complete-web-development-bootcamp/learn/lecture/37350282
+
+**2. Posso utilizar esses projetos Capstone em entrevistas de emprego ou no meu portfólio?**
+
+**Sim!** Esse é justamente o objetivo desses projetos Capstone.
+
+Diferentemente dos projetos comuns do curso, que possuem código de solução e vídeos mostrando como fazê-los, os projetos Capstone foram feitos para serem inteiramente **"seu próprio trabalho"**.
+
+Mais de um milhão de estudantes já se matricularam neste curso de desenvolvimento web em todo o mundo. Se você adicionar um projeto comum do curso ao seu portfólio, é bastante provável que seu cliente ou recrutador saiba que ele veio desse curso.
+
+Os projetos Capstone, por outro lado, não possuem código de solução, walkthrough, especificações de design ou uma implementação pronta. Eles são **puramente uma criação sua**.
+
+Portanto, eles definitivamente podem ser considerados como seu próprio trabalho e adicionados ao seu portfólio.
+
+Quando contrato desenvolvedores, sempre peço um portfólio. Considero aquilo que eles construíram por conta própria muito mais importante do que a universidade que frequentaram ou se possuem um diploma em Ciência da Computação.
+
+Muitos dos meus amigos que são CEOs de multinacionais e startups concordam com essa visão.
+
+**3. E se eu não lembrar como fazer alguma coisa, mesmo tendo assistido a todos os vídeos?**
+
+Assistir a um vídeo muitas vezes não é suficiente para aprender uma habilidade.
+
+É por isso que esses projetos Capstone são uma ótima oportunidade para identificar seus pontos fracos.
+
+Enquanto estiver construindo o projeto, você provavelmente vai ficar preso em alguma parte ou esquecer como fazer determinadas coisas.
+
+**Ótimo!**
+
+Esse é justamente o momento de revisar as aulas anteriores ou consultar a documentação online para preencher as lacunas no seu conhecimento.
