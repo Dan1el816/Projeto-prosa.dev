@@ -54,6 +54,13 @@ app.post("/enviar", (req, res) => {
   res.redirect("/");
 });
 
+app.put("/editar",(req,res)=>{
+  res.render("escrever.ejs",{
+    ano_atual:ano,
+    posts
+  })
+})
+
 app.listen(3000, () => {
   console.log("Servidor rodando na porta 3000");
 });

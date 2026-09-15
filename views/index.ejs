@@ -26,8 +26,8 @@
                   </summary>
 
                   <div class="post-menu-panel">
-                    <button type="button" class="post-action post-action-edit">Editar</button>
-                    <button type="button" class="post-action post-action-delete">Excluir</button>
+                    <button type="button" class="post-action post-action-edit" data-method="PUT" action="/editar">Editar</button>
+                    <button type="button" class="post-action post-action-delete" data-method="DELETE">Excluir</button>
                   </div>
                 </details>
               </div>
@@ -40,17 +40,7 @@
       </main>
     <% } %>
 
-    <script>
-      document.addEventListener("click", (event) => {
-        const menus = document.querySelectorAll(".post-menu");
-
-        menus.forEach((menu) => {
-          if (!menu.contains(event.target)) {
-            menu.removeAttribute("open");
-          }
-        });
-      });
-    </script>
+    <script src="/script.js" defer></script>
 
     <%- include("partials/footer.ejs") %>
   </body>
