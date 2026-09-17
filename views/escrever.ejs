@@ -6,8 +6,6 @@
 
     <main class="compose-page">
       <form action="/enviar" method="POST" class="compose-form">
-        <button type="button" class="add-media" aria-label="Adicionar mídia">+</button>
-
         <div class="compose-fields">
           <label class="visually-hidden" for="titulo">Título</label>
           <input
@@ -17,6 +15,7 @@
             name="titulo"
             placeholder="Título"
             autocomplete="off"
+            maxlength="120"
             required
           />
 
@@ -27,6 +26,7 @@
             name="conteudo"
             placeholder="Conte sua história..."
             rows="8"
+            maxlength="10000"
             required
           ></textarea>
           <button type="submit" class="submit-post">Publicar</button>

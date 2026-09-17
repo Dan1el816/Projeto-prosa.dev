@@ -6,8 +6,13 @@
 
     <main class="post-page">
       <article class="post-detail">
-        <p class="post-detail-kicker">Prosa.dev</p>
         <h1 class="post-detail-title"><%= post.titulo %></h1>
+        <p class="post-date">
+          Publicado em <%= new Date(post.createdAt).toLocaleDateString("pt-BR", { dateStyle: "long" }) %>
+          <% if (post.updatedAt) { %>
+            · Atualizado em <%= new Date(post.updatedAt).toLocaleDateString("pt-BR", { dateStyle: "long" }) %>
+          <% } %>
+        </p>
         <div class="post-detail-content"><%= post.conteudo %></div>
         <a class="back-to-posts" href="/">&larr; Voltar para os posts</a>
       </article>

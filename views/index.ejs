@@ -4,6 +4,9 @@
   <body>
     <%- include("partials/header.ejs") %>
 
+    <% if (mensagem) { %>
+      <p class="success-message" role="status"><%= mensagem %></p>
+    <% } %>
 
     <% if (posts.length === 0) { %>
       <main>
@@ -27,7 +30,7 @@
 
                   <div class="post-menu-panel">
                     <a id="editar_<%= post.id %>" class="post-action post-action-edit" href="/editar/<%= post.id %>">Editar</a>
-                    <form action="/excluir/<%= post.id %>" method="POST">
+                    <form action="/excluir/<%= post.id %>" method="POST" onsubmit="return confirm('Tem certeza que deseja excluir este post?');">
                       <button id="excluir_<%= post.id %>" type="submit" class="post-action post-action-delete">Excluir</button>
                     </form>
                   </div>
@@ -35,6 +38,12 @@
               </div>
 
               <p class="post-content"><%= post.conteudo %></p>
+              <p class="post-date">
+                Publicado em <%= new Date(post.createdAt).toLocaleDateString("pt-BR", { dateStyle: "long" }) %>
+                <% if (post.updatedAt) { %>
+                  · Atualizado em <%= new Date(post.updatedAt).toLocaleDateString("pt-BR", { dateStyle: "long" }) %>
+                <% } %>
+              </p>
               <a class="post-link-label" href="/post/<%= post.id %>">Ler post <span aria-hidden="true">&rarr;</span></a>
             </article>
           <% }) %>

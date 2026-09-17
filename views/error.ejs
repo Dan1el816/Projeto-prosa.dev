@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <%- include("partials/head.ejs") %>
+  <body>
+    <%- include("partials/header.ejs") %>
+
+    <main class="post-page error-page">
+      <article class="post-detail">
+        <p class="post-detail-kicker">Ops!</p>
+        <h1 class="post-detail-title"><%= titulo %></h1>
+        <div class="post-detail-content">
+          <p><%= mensagem %></p>
+        </div>
+        <a class="back-to-posts" href="/">&larr; Voltar para os posts</a>
+      </article>
+    </main>
+
+    <%- include("partials/footer.ejs") %>
+  </body>
+</html>

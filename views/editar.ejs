@@ -7,7 +7,6 @@
 		<main class="compose-page">
 			<form action="/editar/<%= post.id %>" method="POST" class="compose-form">
 				<input type="hidden" name="id" value="<%= post.id %>" />
-				<button type="button" class="add-media" aria-label="Adicionar mídia">+</button>
 
 				<div class="compose-fields">
 					<label class="visually-hidden" for="titulo">Título</label>
@@ -19,6 +18,7 @@
 						placeholder="Título"
 						autocomplete="off"
 						value="<%= post.titulo %>"
+						maxlength="120"
 						required
 					/>
 
@@ -29,9 +29,11 @@
 						name="conteudo"
 						placeholder="Conte sua história..."
 						rows="8"
+						maxlength="10000"
+						required
 					><%= post.conteudo %></textarea>
 						
-					<button type="submit" class="submit-post">Publicar</button>
+					<button type="submit" class="submit-post">Salvar alterações</button>
 				</div>
 			</form>
 		</main>
