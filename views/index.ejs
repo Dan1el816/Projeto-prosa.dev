@@ -26,8 +26,8 @@
                   </summary>
 
                   <div class="post-menu-panel">
-                    <button type="button" class="post-action post-action-edit" data-method="PUT" action="/editar">Editar</button>
-                    <button type="button" class="post-action post-action-delete" data-method="DELETE">Excluir</button>
+                    <a id="editar_<%= post.id %>" class="post-action post-action-edit" href="/editar/<%= post.id %>">Editar</a>
+                    <button id="excluir_<%=post.id %>" type="button" class="post-action post-action-delete" data-method="DELETE">Excluir</button>
                   </div>
                 </details>
               </div>

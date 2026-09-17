@@ -54,12 +54,31 @@ app.post("/enviar", (req, res) => {
   res.redirect("/");
 });
 
-app.put("/editar",(req,res)=>{
-  res.render("escrever.ejs",{
+app.get("/editar/:id",(req,res)=>{
+  const post = posts.find((item) => item.id === Number(req.params.id));
+
+  if (!post) {
+    return res.status(404).send("Post não encontrado");
+  }
+
+  res.render("editar.ejs",{
     ano_atual:ano,
-    posts
+    post
   })
-})
+});
+
+app.post("/editar/:id", (req, res) => {
+  const post = posts.find((item) => item.id === Number(req.params.id));
+
+  if (!post) {
+    return res.status(404).send("Post não encontrado");
+  }
+
+  post.titulo = req.body.titulo;
+  post.conteudo = req.body.conteudo;
+
+  res.redirect("/");
+});
 
 app.listen(3000, () => {
   console.log("Servidor rodando na porta 3000");
