@@ -313,6 +313,7 @@ article,
 }
 
 .post-action {
+  text-decoration: none;
   border: 0;
   border-radius: 8px;
   background: transparent;

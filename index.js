@@ -8,7 +8,7 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 
 const ano = new Date().getFullYear();
-const posts=[];
+let posts=[];
 
 app.get("/", (req, res) => {
   res.render("index.ejs",{
@@ -66,7 +66,18 @@ app.get("/editar/:id",(req,res)=>{
     post
   })
 });
+app.post("/excluir/:id", (req, res) => {
+  const id = Number(req.params.id);
+  const post = posts.find((item) => item.id === id);
 
+  if (!post) {
+    return res.status(404).send("Post não encontrado");
+  }
+
+  posts = posts.filter((post) => post.id !== id);
+
+  res.redirect("/");
+});
 app.post("/editar/:id", (req, res) => {
   const post = posts.find((item) => item.id === Number(req.params.id));
 
